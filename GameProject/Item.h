@@ -11,4 +11,11 @@
 
 #include <stdio.h>
 
+class Item{
+    
+public:
+    Item();
+};
+
+
 #endif /* defined(__GameProject__Item__) */

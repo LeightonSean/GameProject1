@@ -10,5 +10,11 @@
 #define __GameProject__Champion__
 
 #include <stdio.h>
+#include "Person.h"
+
+class Champion:public Person{
+    
+};
+
 
 #endif /* defined(__GameProject__Champion__) */

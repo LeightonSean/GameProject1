@@ -8,12 +8,16 @@
  */
 
 #include <CoreFoundation/CoreFoundation.h>
+#include <OpenGL/OpenGL.h>
+#include <OpenCL/OpenCL.h>
 
 #pragma GCC visibility push(hidden)
 
 class CGameProject {
 	public:
 		CFStringRef UUID(void);
+    int main;
+    
 };
 
 #pragma GCC visibility pop

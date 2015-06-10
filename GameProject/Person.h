@@ -10,5 +10,31 @@
 #define __GameProject__Person__
 
 #include <stdio.h>
+#include <OpenCL/OpenCL.h>
+#include <OpenGL/OpenGL.h>
+#include "Item.h"
+#include <string>
+using namespace std;
+
+class Person{
+    
+public:
+    virtual void movePlayer(float, float);
+    virtual void draw();
+    virtual void addItem(Item*);
+    
+    Person();
+    void setName(string);
+    float getMovementSpeed();
+    float getAttackDamage();
+    float getHealth();
+private:
+    float attackDamage = 0.0;
+    float movementSpeed = 0.0;
+    float health = 0.0;
+    string name = "";
+    Item *currentItem;
+};
+
 
 #endif /* defined(__GameProject__Person__) */

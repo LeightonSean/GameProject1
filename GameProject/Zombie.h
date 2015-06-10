@@ -10,5 +10,10 @@
 #define __GameProject__Zombie__
 
 #include <stdio.h>
+#include "Person.h"
+
+class Zombie:public Person{
+    
+};
 
 #endif /* defined(__GameProject__Zombie__) */
