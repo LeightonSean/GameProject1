@@ -10,8 +10,13 @@
 #define __GameProject__Person__
 
 #include <stdio.h>
-#include <OpenCL/OpenCL.h>
-#include <OpenGL/OpenGL.h>
+//#include <OpenCL/OpenCL.h>
+//#include <OpenGL/OpenGL.h>
+//#include "GL\glut.h"
+#include "GL\glew.h"
+
+#include "GL\freeglut.h"
+
 #include "Item.h"
 #include <string>
 using namespace std;

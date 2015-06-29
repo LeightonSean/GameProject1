@@ -7,7 +7,7 @@
  *
  */
 
-#include <CoreFoundation/CoreFoundation.h>
+/*#include <CoreFoundation/CoreFoundation.h>
 #include <OpenGL/OpenGL.h>
 #include <OpenCL/OpenCL.h>
 
@@ -18,6 +18,6 @@ class CGameProject {
 		CFStringRef UUID(void);
     int main;
     
-};
+};*/
 
 #pragma GCC visibility pop

@@ -7,14 +7,15 @@
  *
  */
 
-extern "C" {
+/*extern "C" {
 #include <CoreFoundation/CoreFoundation.h>
 
 #pragma GCC visibility push(default)
-
+*/
 /* External interface to the GameProject, C-based */
 
-CFStringRef GameProjectUUID(void);
+/*CFStringRef GameProjectUUID(void);
 
 #pragma GCC visibility pop
 }
+*/

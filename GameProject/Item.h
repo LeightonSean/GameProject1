@@ -8,7 +8,7 @@
 
 #ifndef __GameProject__Item__
 #define __GameProject__Item__
-
+ 
 #include <stdio.h>
 
 class Item{

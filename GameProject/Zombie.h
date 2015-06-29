@@ -11,7 +11,7 @@
 
 #include <stdio.h>
 #include "Person.h"
-
+ 
 class Zombie:public Person{
     
 };
