@@ -33,7 +33,7 @@ bool Map::generateMap(){
 		std::vector<DIR> live;
 		std::vector<Cell*> stack;
 
-		//srand(time(NULL));
+		///srand(time(NULL));
 		int curX = rand() % width;
 		int curY = rand() % height;
 

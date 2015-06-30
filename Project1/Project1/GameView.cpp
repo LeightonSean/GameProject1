@@ -1,8 +1,5 @@
 #include "GameView.h"
 
-
-
-
 GameView::GameView(){
 	gameMap = new Map();
 

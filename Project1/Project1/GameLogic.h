@@ -1,11 +1,9 @@
 
 #include <stdlib.h>
-#include <errors.h>
 #include <string>
 #include "GL\glew.h"
 #include "GL\freeglut.h"
 #include "GameView.h"
-#include "Map.h"
 #include "PlayerLogic.h"
 
 using namespace std;
@@ -13,7 +11,6 @@ using namespace std;
 class GameLogic{
 
 public:
-	
 	GameLogic();
 private:
 	
