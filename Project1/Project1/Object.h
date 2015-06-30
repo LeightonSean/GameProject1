@@ -31,4 +31,5 @@ private:
 	float width, height;
 	Color color; // Will replace with texture
 	std::vector<Object*> parts; // parts is empty if this is the base object
-}
+};
+

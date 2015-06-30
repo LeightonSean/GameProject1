@@ -2,6 +2,8 @@
 #include <stdlib.h>
 
 class PlayerLogic{
+
+
 public:
 
 
@@ -27,7 +29,7 @@ public:
 private:
 
 	node* commandList;
-	Object person;
+	//Object person;
 	float xMovementSpeed = 0.0;
 	float yMovementSpeed = 0.0;
 	float zMovementSpeed = 0.0;

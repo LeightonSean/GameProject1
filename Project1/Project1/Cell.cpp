@@ -65,3 +65,26 @@ void Cell::removeWall(int w){
 
 	walls &= ~w;// Bitwise AND walls with the passed wall.
 }
+
+int Cell::getWalls() const{
+	return walls;
+}
+
+std::ostream& operator<<(std::ostream& strm, const Cell& c){
+
+	if ((c.getWalls() & Cell::WALL_WEST) != 0){
+		strm << '|';
+
+	}
+	else
+		strm << ' ';
+
+	if ((c.getWalls() & Cell::WALL_SOUTH) != 0){
+		strm << '_';
+	}
+	else 
+		strm << ' ';
+
+	return strm;
+
+}

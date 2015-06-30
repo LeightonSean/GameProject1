@@ -10,8 +10,11 @@
 #define __GameProject__Person__
 
 #include <stdio.h>
+//#include <OpenCL/OpenCL.h>
+//#include <OpenGL/OpenGL.h>
+//#include "GL\glut.h"
 #include "GL\glew.h"
-#include "GL\glut.h"
+
 #include "GL\freeglut.h"
 
 #include "Item.h"
@@ -21,9 +24,9 @@ using namespace std;
 class Person{
     
 public:
-    void movePlayer(float, float);
-    void draw();
-    void addItem(Item*);
+    virtual void movePlayer(float, float);
+    virtual void draw();
+    virtual void addItem(Item*);
     
     Person();
     void setName(string);

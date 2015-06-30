@@ -1,7 +1,7 @@
 
 #include <string>
 #include <iostream>
-#include "stdafx.h"
+
 class Cell{
 public:
 	enum WALL
@@ -18,10 +18,10 @@ public:
 	Cell(int r, int c, int state);
 	bool visited();
 	void setVisited(bool v);
-	int getRow(){ return row; };
-	int getColumn(){ return col; };
+	int getRow();
+	int getColumn();
 	void removeWall(int w);
-	int getWalls();
+	int getWalls() const;
 	void setWalls(int w);
 	void setPosition(int r, int c);
 	void draw();

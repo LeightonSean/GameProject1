@@ -1,16 +1,17 @@
 #include "PlayerLogic.h"
 
+
 PlayerLogic::PlayerLogic(){
 	initialize();
 
 }
 
 PlayerLogic::PlayerLogic(Object obj){
-	person = obj;
+	//person = obj;
 }
 
 void PlayerLogic::attachPerson(Object obj){
-	person = obj;
+	//person = obj;
 
 }
 
@@ -20,7 +21,7 @@ void PlayerLogic::initialize(){
 	commandList = new node();
 	commandList->next = 0;
 	commandList->prev = 0;
-	commandList->cmd = WAIT;
+	commandList->cmd = PlayerLogic::WAIT;
 
 
 }
@@ -55,7 +56,7 @@ void PlayerLogic::insertCommand(node* root, commands addCommand){
 }
 
 bool PlayerLogic::checkCollision(Object obj){
-	if (person == NULL)
+	/*if (person == NULL)
 		return false;//Error no person attached to this logic
 	bool collide = true;
 	//check if the person's area intersects the object's area
@@ -66,13 +67,13 @@ bool PlayerLogic::checkCollision(Object obj){
 			if (o.Bottom > n.Top){ collide = false; }
 			if (o.Top < n.Bottom){ collide = false; }
 		}
-	}
+	}*/
 
-	return collide;
+	return false;
 }
 
 void PlayerLogic::logicLoop(){
-	for (commands c in commandList){
+	/*for (commands c in commandList){
 		switch (c){
 		case MOVE_ANIMATION:
 			break;
@@ -86,9 +87,9 @@ void PlayerLogic::logicLoop(){
 			break;
 		}
 
+		*/
 
-
-	}
+	//}
 
 
 }

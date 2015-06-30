@@ -1,19 +1,19 @@
-#include "GL\freeglut.h"
+#include <stdlib.h>
 #include "GL\glew.h"
+#include "GL\freeglut.h"
+#include "Map.h"
 
-
+using namespace std;
 class GameView{
 
 public:
-	enum Commands{
-		MOVE_PLAYER, SHOWING_SPLASH
-	};
-
-
-	static void draw();
-	static Commands* getCommands;
-	
-
+	char GetNextKeyPressed();
+	void updateNPC();
+	void draw();
+	GameView();
 private:
 
+	void processNormalKeys(unsigned char key, int x, int y);
+	Map *gameMap;
+	vector<char>keysPressed;
 };
